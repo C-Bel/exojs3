@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="exo3.css" media="screen" title="no title">
+    <title>Dans le fichier HTML fourni, changer la couleur du texte en fonction du bouton choisi</title>
+  </head>
+  <body>
+    <div id="texte">
+      <p>hola hola hola</p>
+    </div>
+
+    <div>
+      <div class="color green" onclick="changeColor(this)"></div>
+      <div class="color red" onclick="changeColor(this)"></div>
+      <div class="color blue" onclick="changeColor(this)"></div>
+  </div>
+    <script type="text/javascript">
+    function changeColor(cible){
+     var couleur = cible.className;
+     couleur = couleur.substr(5);
+     document.getElementById('texte').style.color = couleur;
+   }
+
+    </script>
+
+  </body>
+</html>

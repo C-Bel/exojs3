@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dans le fichier HTML fourni, faire afficher ou masquer le texte en fonction de l'ancre</title>
+  </head>
+  <body>
+    <a href="#" onclick="afficher()">Afficher</a>
+    <a href="#" onclick="cacher()">Masquer</a>
+    <div id="texte">
+      <p>
+        hola hola hola
+      </p>
+    </div>
+
+    <script type="text/javascript">
+    function afficher(){
+      document.getElementById('texte').style.display = "block";
+    }
+    function cacher(){
+      document.getElementById('texte').style.display = "none";
+    }
+
+    </script>
+
+  </body>
+</html>
